@@ -2,8 +2,8 @@
 	import ProductGrid from '$lib/components/ProductGrid.svelte';
 	import type { PageData } from './$types';
 	let { data }: { data: PageData } = $props();
-	let q = data.q ?? '';
-	let category = data.category ?? '';
+	let q = $state(data.q ?? '');
+	let category = $state(data.category ?? '');
 
 	function apply(e: SubmitEvent) {
 		e.preventDefault();
@@ -16,7 +16,7 @@
 
 <section class="container container-py">
 	<h1>Каталог</h1>
-	<form class="mt-4 grid gap-3 md:flex md:items-center" on:submit={apply}>
+	<form class="mt-4 grid gap-3 md:flex md:items-center" onsubmit={apply}>
 		<input class="w-full rounded-lg border border-slate-200 px-4 py-2 md:w-80" placeholder="Поиск" bind:value={q} />
 		<select class="w-full rounded-lg border border-slate-200 px-4 py-2 md:w-64" bind:value={category}>
 			<option value="">Все категории</option>
