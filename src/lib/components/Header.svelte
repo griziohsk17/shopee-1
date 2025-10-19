@@ -31,6 +31,7 @@
 
 		<nav class="ml-3 hidden items-center gap-3 md:flex">
 			<a href="/catalog" class="text-sm font-medium hover:text-primary">Каталог</a>
+			<a href="/orders" class="text-sm font-medium hover:text-primary">Заказы</a>
 			<a href="/cart" class="text-sm font-medium hover:text-primary">Корзина</a>
 			<a href="/user" class="text-sm font-medium hover:text-primary">Профиль</a>
 		</nav>
@@ -50,6 +51,7 @@
 			</form>
 			<nav class="container grid gap-1 pb-4">
 				<a class="rounded-lg px-3 py-2 hover:bg-slate-50" href="/catalog">Каталог</a>
+				<a class="rounded-lg px-3 py-2 hover:bg-slate-50" href="/orders">Заказы</a>
 				<a class="rounded-lg px-3 py-2 hover:bg-slate-50" href="/cart">Корзина</a>
 				<a class="rounded-lg px-3 py-2 hover:bg-slate-50" href="/user">Профиль</a>
 			</nav>

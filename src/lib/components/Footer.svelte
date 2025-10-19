@@ -9,6 +9,7 @@
 		</div>
 		<nav class="grid gap-2 text-sm">
 			<a class="hover:text-primary" href="/catalog">Каталог</a>
+			<a class="hover:text-primary" href="/orders">Заказы</a>
 			<a class="hover:text-primary" href="/cart">Корзина</a>
 			<a class="hover:text-primary" href="/user">Профиль</a>
 		</nav>
