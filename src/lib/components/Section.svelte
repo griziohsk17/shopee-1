@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { title = '', subtitle = '', ...rest } = $props();
+	let { title = '', subtitle = '', actions, children, ...rest } = $props();
 	const hasSubtitle = $derived(Boolean(subtitle && subtitle.length > 0));
 </script>
 
@@ -11,7 +11,7 @@
 				<p class="mt-1 text-muted">{subtitle}</p>
 			{/if}
 		</div>
-		<slot name="actions" />
+		{@render actions?.()}
 	</div>
-	<slot />
+	{@render children?.()}
 </section>
