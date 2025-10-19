@@ -1,0 +1,7 @@
+[
+  { "id": "c1", "name": "Кроссовки", "slug": "sneakers" },
+  { "id": "c2", "name": "Худи", "slug": "hoodies" },
+  { "id": "c3", "name": "Аксессуары", "slug": "accessories" },
+  { "id": "c4", "name": "Куртки", "slug": "jackets" },
+  { "id": "c5", "name": "Футболки", "slug": "tshirts" }
+]
