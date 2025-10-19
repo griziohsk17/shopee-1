@@ -10,6 +10,22 @@ export type OrderItem = {
   image: string;
 };
 
+export type Address = {
+  fullName: string;
+  phone: string;
+  city: string;
+  street: string;
+  zip: string;
+};
+
+export type TimelineEvent = {
+  id: string;
+  label: string;
+  at: string; // ISO date
+  status?: OrderStatus;
+  description?: string;
+};
+
 export type Order = {
   id: string;
   number: string; // human-friendly order number
@@ -20,4 +36,8 @@ export type Order = {
   shipping: number;
   total: number;
   currency: 'RUB';
+  shippingMethod?: string;
+  trackingNumber?: string;
+  shippingAddress?: Address;
+  events?: TimelineEvent[];
 };
