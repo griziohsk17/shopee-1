@@ -11,7 +11,21 @@
     "subtotal": 10980,
     "shipping": 300,
     "total": 11280,
-    "currency": "RUB"
+    "currency": "RUB",
+    "shippingMethod": "Почта РФ — курьер",
+    "trackingNumber": "RP123456789RU",
+    "shippingAddress": {
+      "fullName": "Иван Иванов",
+      "phone": "+7 900 123-45-67",
+      "city": "Москва",
+      "street": "ул. Тверская, д. 10, кв. 15",
+      "zip": "101000"
+    },
+    "events": [
+      {"id": "e1", "label": "Заказ создан", "at": "2025-01-10T10:15:00.000Z", "status": "processing"},
+      {"id": "e2", "label": "Оплата получена", "at": "2025-01-10T10:18:00.000Z", "status": "paid"},
+      {"id": "e3", "label": "Сборка заказа", "at": "2025-01-10T11:00:00.000Z"}
+    ]
   },
   {
     "id": "o-1002",
@@ -25,6 +39,20 @@
     "subtotal": 15980,
     "shipping": 0,
     "total": 15980,
-    "currency": "RUB"
+    "currency": "RUB",
+    "shippingMethod": "СДЭК — пункт выдачи",
+    "trackingNumber": "SD987654321RU",
+    "shippingAddress": {
+      "fullName": "Мария Петрова",
+      "phone": "+7 921 555-77-88",
+      "city": "Санкт‑Петербург",
+      "street": "Невский пр., д. 100",
+      "zip": "191036"
+    },
+    "events": [
+      {"id": "e1", "label": "Заказ создан", "at": "2025-02-02T14:40:00.000Z", "status": "processing"},
+      {"id": "e2", "label": "Оплата получена", "at": "2025-02-02T14:43:00.000Z", "status": "paid"},
+      {"id": "e3", "label": "Передан в доставку", "at": "2025-02-03T09:10:00.000Z", "status": "shipped"}
+    ]
   }
 ]
