@@ -2,45 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
+@layer base {
+  html { scroll-behavior: smooth; }
+  :root {
+    --radius: 0.75rem;
+  }
+  h1 { @apply text-3xl md:text-5xl font-extrabold tracking-tight; }
+  h2 { @apply text-2xl md:text-3xl font-bold; }
+  h3 { @apply text-xl md:text-2xl font-semibold; }
+  body { @apply bg-background text-foreground; }
 }
 
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-	transition: filter 300ms;
-}
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-[var(--radius)] px-4 py-2 font-semibold transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-violet-700;
+  }
+  .btn-outline {
+    @apply btn border border-slate-300 bg-white text-foreground hover:bg-slate-50;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700;
+  }
+  .card {
+    @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+  }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
-}
-
-.card {
-	padding: 2em;
-}
-
-.read-the-docs {
-	color: #888;
+@layer utilities {
+  .container-py { @apply py-6 md:py-12; }
 }
