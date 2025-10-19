@@ -1,6 +1,6 @@
 <script lang="ts">
 	let { title = '', subtitle = '', ...rest } = $props();
-	$: hasSubtitle = subtitle && subtitle.length > 0;
+	const hasSubtitle = $derived(Boolean(subtitle && subtitle.length > 0));
 </script>
 
 <section class="container container-py" {...rest}>
